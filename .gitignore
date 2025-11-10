@@ -1,0 +1,30 @@
+# User-specific configuration
+config.json
+
+# Log files
+logs/
+*.log
+
+# Test/temporary XBP files
+Test_Batch_*.xbp
+goddamnfuckingshit.xbp
+fuck.xbp
+endaentest.xbp
+abunch_of_files.xbp
+
+# Test scripts (if you want to keep these out)
+# Test-ProblematicFiles.ps1
+# Compare-Files.ps1
+
+# Windows thumbnail cache
+Thumbs.db
+
+# macOS files
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

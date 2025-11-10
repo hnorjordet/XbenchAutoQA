@@ -1,0 +1,8 @@
+{
+  "watchFolder": "C:\\Translation\\XbenchQA",
+  "xbenchPath": "C:\\Program Files (x86)\\ApSIC\\Xbench\\xbench.exe",
+  "autoStartQA": false,
+  "logEnabled": true,
+  "version": "1.0",
+  "createdDate": "2025-10-30 12:00:00"
+}
