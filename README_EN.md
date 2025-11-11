@@ -225,7 +225,7 @@ File cannot be loaded because running scripts is disabled on this system.
 **Checklist:**
 - [ ] Is `XbenchAutoQA.ps1` running? (Do you see the "Monitoring folder..." message?)
 - [ ] Did you export to the correct folder? (Check `config.json` for watch folder)
-- [ ] Is the filename `.xlf`, `.xliff`, or `.mqxliff`?
+- [ ] Is the filename `.xlf`, `.xliff`, `.mqxliff`, or `.mxliff`?
 - [ ] Try copying the file to the folder instead of exporting directly
 
 ### Xbench doesn't open
@@ -315,6 +315,7 @@ The script monitors for files with these extensions:
 - `.xlf` (XLIFF 1.2)
 - `.xliff` (XLIFF 1.2/2.0)
 - `.mqxliff` (MemoQ XLIFF)
+- `.mxliff` (Phrase XLIFF)
 
 ### Xbench project files
 

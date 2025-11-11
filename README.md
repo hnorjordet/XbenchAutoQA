@@ -224,7 +224,7 @@ File cannot be loaded because running scripts is disabled on this system.
 **Sjekkliste:**
 - [ ] Er `XbenchAutoQA.ps1` kjørende? (Ser du "Overvåker mappe..." meldingen?)
 - [ ] Eksporterte du til riktig mappe? (Sjekk `config.json` for overvåkningsmappe)
-- [ ] Er filnavnet `.xlf`, `.xliff`, eller `.mqxliff`?
+- [ ] Er filnavnet `.xlf`, `.xliff`, `.mqxliff`, eller `.mxliff`?
 - [ ] Prøv å kopiere filen til mappen i stedet for å eksportere direkte
 
 ### Xbench åpner ikke
@@ -314,6 +314,7 @@ Scriptet overvåker for filer med disse endelsene:
 - `.xlf` (XLIFF 1.2)
 - `.xliff` (XLIFF 1.2/2.0)
 - `.mqxliff` (MemoQ XLIFF)
+- `.mxliff` (Phrase XLIFF)
 
 ### Xbench-prosjektfiler
 

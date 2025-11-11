@@ -1,5 +1,5 @@
 # XbenchAutoQA - Automatic Xbench QA Runner for MemoQ Files
-# Version 1.1.1 - Stable Release
+# Version 1.2.0 - Stable Release
 
 $ErrorActionPreference = "Stop"
 $configPath = Join-Path $PSScriptRoot "config.json"
@@ -306,7 +306,7 @@ function Process-XliffFile {
 # Main
 Write-Host ""
 Write-Host "========================================================" -ForegroundColor Cyan
-Write-Host "          Xbench Auto-QA Runner v1.1.1                 " -ForegroundColor Cyan
+Write-Host "          Xbench Auto-QA Runner v1.2.0                 " -ForegroundColor Cyan
 Write-Host "          Batch Processing + Live Monitoring           " -ForegroundColor Cyan
 Write-Host "========================================================" -ForegroundColor Cyan
 Write-Host ""
@@ -322,11 +322,11 @@ Write-Host "Monitoring folder for new MQXLIFF/XLIFF files..." -ForegroundColor G
 Write-Host "Press Ctrl+C to exit" -ForegroundColor Gray
 Write-Host ""
 
-Write-Log "XbenchAutoQA v1.1.1 started (polling mode) - watching: $($config.watchFolder)"
+Write-Log "XbenchAutoQA v1.2.0 started (polling mode) - watching: $($config.watchFolder)"
 
 # Check for existing files at startup
 $existingFiles = Get-ChildItem -Path $config.watchFolder -File | Where-Object {
-    $_.Extension -eq ".xlf" -or $_.Extension -eq ".xliff" -or $_.Extension -eq ".mqxliff"
+    $_.Extension -eq ".xlf" -or $_.Extension -eq ".xliff" -or $_.Extension -eq ".mqxliff" -or $_.Extension -eq ".mxliff"
 }
 
 if ($existingFiles.Count -ge 2) {
@@ -423,7 +423,7 @@ try {
     while ($true) {
         # Get all XLIFF files in watch folder
         $files = Get-ChildItem -Path $config.watchFolder -File | Where-Object {
-            $_.Extension -eq ".xlf" -or $_.Extension -eq ".xliff" -or $_.Extension -eq ".mqxliff"
+            $_.Extension -eq ".xlf" -or $_.Extension -eq ".xliff" -or $_.Extension -eq ".mqxliff" -or $_.Extension -eq ".mxliff"
         }
         
         foreach ($file in $files) {

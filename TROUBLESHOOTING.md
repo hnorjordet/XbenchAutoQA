@@ -19,7 +19,7 @@
 ### Files Not Being Detected
 
 **Check:**
-1. File extensions: Must be `.xlf`, `.xliff`, or `.mqxliff`
+1. File extensions: Must be `.xlf`, `.xliff`, `.mqxliff`, or `.mxliff`
 2. Watch folder is correct in config.json
 3. Script is running (look for dots appearing every 2 seconds)
 

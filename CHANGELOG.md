@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.2.0] - 2025-11-11
+
+### ✨ New Features
+
+**Phrase MXLIFF Support:**
+- ✅ Added support for `.mxliff` files (Phrase TMS format)
+- Works alongside existing `.xlf`, `.xliff`, and `.mqxliff` support
+- Uses standard XLIFF filter in Xbench (same as regular XLIFF files)
+
+---
+
 ## [1.1.1] - 2025-11-10
 
 ### 🐛 Critical Bug Fixes
@@ -82,7 +93,7 @@ All notable changes to this project will be documented in this file.
 - PowerShell 5.1+
 - Xbench 2.9 and 3.0
 - MemoQ desktop version
-- File types: .xlf, .xliff, .mqxliff
+- File types: .xlf, .xliff, .mqxliff, .mxliff
 
 **Known Limitations:**
 - Desktop MemoQ only (no API integration)
